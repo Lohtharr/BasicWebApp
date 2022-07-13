@@ -19,7 +19,10 @@ public class QueryProcessor {
             int y = Integer.parseInt(words[5]);
             return x+y;
         } else if (query.contains("multiply")) {
-
+            String[] words = query.split(' ');
+            int x = Integer.parseInt(words[3]);
+            int y = Integer.parseInt(words[6]);
+            return x*y;
         } else { // TODO extend the programm here
             return "";
         }
