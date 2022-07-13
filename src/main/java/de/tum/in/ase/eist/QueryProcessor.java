@@ -15,15 +15,20 @@ public class QueryProcessor {
            return "MyTeam";
         }else if(query.contains("plus")){
             String[] words = query.split(" ");
-            int x = Integer.parseInt(words[4]);
-            int y = Integer.parseInt(words[6]);
-            return  ""+x+y+"";
+            int x = Integer.parseInt(words[3]);
+            int y = Integer.parseInt(words[5]);
+            int result = x+y;
+            return ""+result;
         } else if (query.contains("multiply")) {
             String[] words = query.split(" ");
-            int x = Integer.parseInt(words[3]);
-            int y = Integer.parseInt(words[6]);
+            int x = Integer.parseInt(words[4]);
+            int y = Integer.parseInt(words[7]);
             return ""+x*y+"";
-        } else { // TODO extend the programm here
+        }else if(query.contains("square")){
+
+        }else if(query.contains("larger")){
+        }
+        else { // TODO extend the programm here
             return "";
         }
     }
